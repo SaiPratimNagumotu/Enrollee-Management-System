@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Enrollees List</h2>
+    </div>
+
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>ACTIVATION STATUS</th>
+                    <th>DATE OF BIRTH</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let enrollee of enrollees | async">
+                    <td>{{enrollee.id}}</td>
+                    <td>{{enrollee.name}}</td>
+                    <td>{{enrollee.activation_status}}</td>
+                    <td>{{enrollee.birth_date}}</td>
+                    <td>
+                        <button class="btn btn-danger" (click)="deleteEnrollee(enrollee.id)" style="margin-left: 10px;">Delete</button>
+                        <button class="btn btn-info" (click)="updateEnrollee(enrollee.id)" style="margin-left: 10px;">Update Details</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn btn-danger" (click)="deleteAllEnrollees()">Delete All</button>
+    </div>
+</div>
