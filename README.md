@@ -17,9 +17,10 @@ Then, using Angular, design a cool user interface that has the following feature
 1. Download the Demo project(SpringBoot) and Enrollee Management Application Project(Angular App) from the repo.
 2. Navigate to application.properties in the springboot application and change the database credentials.
 3. Run the springboot application.
-4. Download angular and node if you dont have in your system and add them to your path.
-5. Open command prompt in the Enrollee Management Application Project and run "ng serve" command.
-6. This will run the project in localhost:4200.
+4. We can see that Hibernate creates a table "enrollees" in the database and tomcat runs on localhost:8080.
+5. Download angular and node if you dont have in your system and add them to your path.
+6. Open command prompt in the Enrollee Management Application Project and run "ng serve" command.
+7. This will run the project in localhost:4200.
 
 # Application Features
 1. The backend application is capable of 
