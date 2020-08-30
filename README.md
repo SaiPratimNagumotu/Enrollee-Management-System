@@ -36,3 +36,5 @@ Then, using Angular, design a cool user interface that has the following feature
     2. Showing all the enrollees along with thier detials 
     3. Deleting all the enrollees at once
     4. Modifying the name and activation status of enrollee
+
+This is testing using PostMan tool and Google Chrome Browser
