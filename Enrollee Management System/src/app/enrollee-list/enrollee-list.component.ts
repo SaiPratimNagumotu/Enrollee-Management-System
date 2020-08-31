@@ -34,7 +34,11 @@ export class EnrolleeListComponent implements OnInit {
       error => console.log(error)
     )
   }
-
+  
+  getEnrolleeListByStatus(active: boolean) {
+    this.enrollees = this.enrolleeService.getEnrolleesByStatus(active);
+  }
+  
   deleteAllEnrollees() {
     this.enrolleeService.deleteAllEnrollees().subscribe(
       data => {
